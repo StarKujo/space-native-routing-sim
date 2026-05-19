@@ -1,0 +1,14 @@
+.claude/
+.local_python/
+.pydeps/
+temp_codex/
+temp_python/
+
+__pycache__/
+*.pyc
+
+output/tmp_*.docx
+
+_py_check.txt
+_py_check2.txt
+_py_check3.txt

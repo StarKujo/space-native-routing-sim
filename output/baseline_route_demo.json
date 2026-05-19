@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "model": "simplified_walker_delta_wlt",
+    "altitude_km": 550.0,
+    "inclination_deg": 53.0,
+    "walker_phase": 1,
+    "planes": 6,
+    "sats_per_plane": 8,
+    "duration_s": 1200.0,
+    "step_s": 30.0,
+    "intra_plane_range_km": 6500.0,
+    "inter_plane_range_km": 7000.0,
+    "node_count": 48,
+    "directed_link_templates": 192,
+    "window_count": 204,
+    "algorithm": "cgr_like"
+  },
+  "route": {
+    "src": "P00S00",
+    "dst": "P03S04",
+    "start_time_s": 0.0,
+    "arrival_time_s": 0.114,
+    "total_cost": 0.114184,
+    "hop_count": 7,
+    "path": [
+      {
+        "src": "P00S00",
+        "dst": "P00S07",
+        "link_type": "intra_plane",
+        "window_index": 1,
+        "window_start_s": 0.0,
+        "window_end_s": 1200.0,
+        "depart_s": 0.0,
+        "arrive_s": 0.018,
+        "prop_delay_s": 0.017669,
+        "risk": 0.764549,
+        "capacity_mbps": 1800.0
+      },
+      {
+        "src": "P00S07",
+        "dst": "P00S06",
+        "link_type": "intra_plane",
+        "window_index": 27,
+        "window_start_s": 0.0,
+        "window_end_s": 1200.0,
+        "depart_s": 0.018,
+        "arrive_s": 0.035,
+        "prop_delay_s": 0.017669,
+        "risk": 0.764549,
+        "capacity_mbps": 1800.0
+      },
+      {
+        "src": "P00S06",
+        "dst": "P00S05",
+        "link_type": "intra_plane",
+        "window_index": 22,
+        "window_start_s": 0.0,
+        "window_end_s": 1200.0,
+        "depart_s": 0.035,
+        "arrive_s": 0.053,
+        "prop_delay_s": 0.017669,
+        "risk": 0.764549,
+        "capacity_mbps": 1800.0
+      },
+      {
+        "src": "P00S05",
+        "dst": "P05S05",
+        "link_type": "inter_plane",
+        "window_index": 21,
+        "window_start_s": 0.0,
+        "window_end_s": 1200.0,
+        "depart_s": 0.053,
+        "arrive_s": 0.059,
+        "prop_delay_s": 0.006238,
+        "risk": 0.384423,
+        "capacity_mbps": 1200.0
+      },
+      {
+        "src": "P05S05",
+        "dst": "P04S05",
+        "link_type": "inter_plane",
+        "window_index": 162,
+        "window_start_s": 0.0,
+        "window_end_s": 1200.0,
+        "depart_s": 0.059,
+        "arrive_s": 0.078,
+        "prop_delay_s": 0.018915,
+        "risk": 0.840374,
+        "capacity_mbps": 1200.0
+      },
+      {
+        "src": "P04S05",
+        "dst": "P03S05",
+        "link_type": "inter_plane",
+        "window_index": 132,
+        "window_start_s": 0.0,
+        "window_end_s": 1200.0,
+        "depart_s": 0.078,
+        "arrive_s": 0.097,
+        "prop_delay_s": 0.018355,
+        "risk": 0.82034,
+        "capacity_mbps": 1200.0
+      },
+      {
+        "src": "P03S05",
+        "dst": "P03S04",
+        "link_type": "intra_plane",
+        "window_index": 104,
+        "window_start_s": 0.0,
+        "window_end_s": 1200.0,
+        "depart_s": 0.097,
+        "arrive_s": 0.114,
+        "prop_delay_s": 0.017669,
+        "risk": 0.764549,
+        "capacity_mbps": 1800.0
+      }
+    ],
+    "strategy": "cgr_like"
+  }
+}
